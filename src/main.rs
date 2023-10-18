@@ -4,4 +4,7 @@ fn main() {
 
     // echor
     common::echor::master(false);
+
+    // catr
+    common::catr::master(true);
 }
