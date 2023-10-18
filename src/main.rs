@@ -1,4 +1,7 @@
 fn main() {
-    // hello program
-    common::hello::master(true);
+    // hello
+    common::hello::master(false);
+
+    // echor
+    common::echor::master(false);
 }
