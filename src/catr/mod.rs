@@ -1,7 +1,9 @@
+use crate::Config;
+
 mod run;
 
-pub fn master(show: bool) {
+pub fn master(show: bool, config: &Config) {
     if show {
-        run::master(true);
+        let _ = run::master(true, config);
     }
 }

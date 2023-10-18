@@ -1,10 +1,6 @@
 fn main() {
-    // hello
-    common::hello::master(false);
-
-    // echor
-    common::echor::master(false);
-
-    // catr
-    common::catr::master(true);
+    if let Err(e) = common::get_args().and_then(common::run) {
+        eprintln!("{}", e);
+        std::process::exit(1);
+    }
 }
