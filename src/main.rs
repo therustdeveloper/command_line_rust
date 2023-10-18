@@ -1,3 +1,4 @@
 fn main() {
-    println!("Hello, world!");
+    // hello program
+    common::hello::master(true);
 }
